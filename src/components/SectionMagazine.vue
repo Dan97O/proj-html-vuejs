@@ -29,13 +29,15 @@ export default {
               <i class="fa-regular fa-circle"></i>
             </span>
           </div>
-
         </div>
       </div>
-      <div class="col-1 p-0 d-flex align-items-center justify-content-end">
+      <div class="col-1 p-0 d-flex align-items-end justify-content-center flex-column">
         <div class="next ">
           <button>NEXT</button>
         </div>
+      </div>
+      <div class="d-flex justify-content-end pe-5">
+        <img src="../assets/svg/svg-4.svg" alt="">
       </div>
     </div>
     <!-- /.row -->

@@ -1,11 +1,13 @@
 <script>
 import NewPlace from './NewPlace.vue';
 import SectionMagazine from './SectionMagazine.vue'
+import SectionPrice from './SectionPrice.vue';
 export default {
   name: 'AppMain',
   components: {
     NewPlace,
-    SectionMagazine
+    SectionMagazine,
+    SectionPrice
   }
 
 }
@@ -15,6 +17,8 @@ export default {
   <main>
     <NewPlace />
     <SectionMagazine />
+    <SectionPrice />
+
   </main>
 </template>
 
