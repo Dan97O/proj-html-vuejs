@@ -27,7 +27,7 @@ export default {
         img4,
         img6,
       ],
-       : [
+      background: [
         bkg1,
         bkg3,
         bkg5,
