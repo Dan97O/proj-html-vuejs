@@ -1,31 +1,67 @@
 <script>
+import img2 from '../assets/img/h3-rev-img-2.png'
+import img4 from '../assets/img/h3-rev-img-4.png'
+import img6 from '../assets/img/h3-rev-img-6.png'
+
 import NavbarHeader from './NavbarHeader.vue';
 export default {
   name: 'AppHeader',
   components: {
-    NavbarHeader
+    NavbarHeader,
+    img2,
+    img4,
+    img6
+  },
+
+  data() {
+    return {
+      images: [
+        img2,
+        img4,
+        img6,
+      ],
+      currentImage: 0,
+    };
+  },
+  methods: {
+    prevImage() {
+      if (this.currentImage === 0) {
+        this.currentImage = this.images.length - 1;
+        console.log('premuto prev');
+      } else {
+        this.currentImage--;
+      }
+    },
+    nextImage() {
+      if (this.currentImage === this.images.length - 1) {
+        this.currentImage = 0;
+        console.log('premuto next');
+      } else {
+        this.currentImage++;
+      }
+    },
   },
 
 }
 </script>
 <template>
   <header>
-
     <NavbarHeader />
     <section class="d-flex justify-content-center">
       <div class="advance d-flex justify-content-between">
         <div class="prev d-flex align-items-center">
-          <button>PREV</button>
+          <button @click="prevImage()">PREV</button>
         </div>
-        <div class="carosel">
-          <img height="400px" src="../assets/img/h3-rev-img-4.png" alt="">
+        <div class="carousel d-flex justify-content-center">
+          <img v-for="image in images" height="400px" :src="image" :class="{ active: image === images[currentImage] }"
+            alt="">
+          <img :src="`../assets/img/${images}.png`" alt="">
         </div>
         <div class="next d-flex align-items-center">
-          <button>NEXT</button>
+          <button @click="nextImage()">NEXT</button>
         </div>
       </div>
     </section>
-
   </header>
 </template>
 
@@ -33,27 +69,14 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/partials/variables";
 
-
 header {
-
   height: 600px;
   background-color: black;
 
   .advance {
     width: 100%;
 
-    .prev button {
-      padding: 10px;
-      background-color: $header_text_color;
-      color: $header_btn;
-      border: none;
-      border-radius: 50% 50% 0 0;
-      writing-mode: vertical-rl;
-      transform: rotate(90deg);
-      height: 40px;
-      margin-left: -8px;
-    }
-
+    .prev button,
     .next button {
       padding: 10px;
       background-color: $header_text_color;
@@ -61,21 +84,40 @@ header {
       border: none;
       border-radius: 50% 50% 0 0;
       writing-mode: vertical-rl;
-      transform: rotate(-90deg);
       height: 40px;
+      margin-left: -8px;
       margin-right: -8px;
     }
 
-    .carosel {
+    .prev button {
+      transform: rotate(90deg);
+    }
+
+    .next button {
+      transform: rotate(-90deg);
+    }
+
+    .carousel {
       text-align: center;
       background-image: url(../assets/img/h3-rev-img-5.png);
       background-repeat: no-repeat;
       width: 53%;
+
+      img {
+        height: 400px;
+        // opacity: 0.5;
+        transition: opacity 0.5s;
+        //display: none;
+      }
+
+      img:not(.active) {
+        display: none;
+      }
+
+      img.active {
+        display: block;
+      }
     }
   }
-
-
-
-
 }
 </style>
