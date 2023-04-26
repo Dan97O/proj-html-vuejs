@@ -2,6 +2,10 @@
 import img2 from '../assets/img/h3-rev-img-2.png'
 import img4 from '../assets/img/h3-rev-img-4.png'
 import img6 from '../assets/img/h3-rev-img-6.png'
+import bkg1 from '../assets/img/h3-rev-img-1.png'
+import bkg3 from '../assets/img/h3-rev-img-3.png'
+import bkg5 from '../assets/img/h3-rev-img-5.png'
+
 
 import NavbarHeader from './NavbarHeader.vue';
 export default {
@@ -10,7 +14,10 @@ export default {
     NavbarHeader,
     img2,
     img4,
-    img6
+    img6,
+    bkg1,
+    bkg3,
+    bkg5
   },
 
   data() {
@@ -19,6 +26,11 @@ export default {
         img2,
         img4,
         img6,
+      ],
+       : [
+        bkg1,
+        bkg3,
+        bkg5,
       ],
       currentImage: 0,
     };
@@ -52,10 +64,10 @@ export default {
         <div class="prev d-flex align-items-center">
           <button @click="prevImage()">PREV</button>
         </div>
-        <div class="carousel d-flex justify-content-center">
-          <img v-for="image in images" height="400px" :src="image" :class="{ active: image === images[currentImage] }"
-            alt="">
-          <img :src="`../assets/img/${images}.png`" alt="">
+        <div class="carousel d-flex justify-content-center"
+          :style="{ 'background-image': `url(${background[currentImage]})` }">
+          <img v-for="image in images" :src="image" :class="{ active: image === images[currentImage] }" alt="">
+
         </div>
         <div class="next d-flex align-items-center">
           <button @click="nextImage()">NEXT</button>
@@ -99,15 +111,12 @@ header {
 
     .carousel {
       text-align: center;
-      background-image: url(../assets/img/h3-rev-img-5.png);
       background-repeat: no-repeat;
       width: 53%;
+      object-fit: contain;
 
       img {
         height: 400px;
-        // opacity: 0.5;
-        transition: opacity 0.5s;
-        //display: none;
       }
 
       img:not(.active) {
