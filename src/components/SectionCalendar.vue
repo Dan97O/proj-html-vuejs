@@ -49,7 +49,7 @@ export default {
       </div>
       <!-- /.col-6 -->
       <div class="col-6 p-0 position-relative">
-        <img class="img-fluid" src="../assets/img/h3-img-5a.jpg" alt="">
+        <img class="img-fluid comics" src="../assets/img/h3-img-5a.jpg" alt="">
         <div class="carriage_top">
           <img src="../assets/svg/svg-10.svg" alt="">
         </div>
@@ -73,7 +73,7 @@ export default {
 
 .col_left {
   background-color: black;
-  height: 600px;
+  height: 550px;
 }
 
 .calendar {
@@ -98,6 +98,12 @@ export default {
   hr {
     border: 1px dashed $line_dashed;
   }
+}
+
+.comics {
+  height: 650px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .carriage_top {

@@ -113,7 +113,7 @@ export default {
     position: absolute;
     top: -25px;
     left: 300px;
-    width: 25%;
+    width: 22%;
 
     h2 {
       font-size: 50px;

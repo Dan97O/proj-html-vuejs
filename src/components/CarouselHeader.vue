@@ -53,21 +53,32 @@ export default {
 
 
 <template>
-  <section class="d-flex justify-content-center">
-    <div class="advance d-flex justify-content-between">
-      <div class="prev d-flex align-items-center">
-        <button @click="prevImage()">PREV</button>
+  <div class="container-fluid p-0">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex justify-content-center">
+          <div class="advance d-flex justify-content-between">
+            <div class="prev d-flex align-items-center">
+              <button @click="prevImage()">PREV</button>
+            </div>
+            <!-- /prev -->
+            <div class="carousel d-flex justify-content-center pb-5"
+              :style="{ 'background-image': `url(${background[currentImage]})` }">
+              <img v-for="image in images" :src="image" :class="{ active: image === images[currentImage] }" alt="">
+            </div>
+            <!-- /carusel -->
+            <div class="next d-flex align-items-center">
+              <button @click="nextImage()">NEXT</button>
+            </div>
+            <!-- /next -->
+          </div>
+        </div>
       </div>
-      <div class="carousel d-flex justify-content-center pb-5"
-        :style="{ 'background-image': `url(${background[currentImage]})` }">
-        <img v-for="image in images" :src="image" :class="{ active: image === images[currentImage] }" alt="">
-
-      </div>
-      <div class="next d-flex align-items-center">
-        <button @click="nextImage()">NEXT</button>
-      </div>
+      <!-- /col-12 -->
     </div>
-  </section>
+    <!-- /row -->
+  </div>
+  <!-- /container-fluid -->
 </template>
 
 
@@ -102,7 +113,7 @@ export default {
   .carousel {
     text-align: center;
     background-repeat: no-repeat;
-    width: 53%;
+    width: 50%;
     object-fit: contain;
 
     img {

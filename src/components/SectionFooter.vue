@@ -118,7 +118,7 @@ ul {
   background-color: rgb(0, 0, 0);
   color: white;
   padding: 4rem 2rem 4rem 4rem;
-  //min-height: 560px;
+  min-height: 584px;
 
   h5,
   .heart,
