@@ -1,6 +1,38 @@
 <script>
 export default {
-  name: 'SectionMagazine'
+  name: 'SectionMagazine',
+  data() {
+    return {
+      comments: [
+        {
+          text: 'FORGET THE PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES',
+          source: 'WASHINGTON POST 2018',
+        },
+        {
+          text: 'I WOULD HIGHLY RECOMMEND THIS PLACE FOR ANYONE WHO WANTS TO TRY AUTHENTIC ITALIAN PIZZA',
+          source: 'NEW YORK TIMES 2019',
+        },
+        {
+          text: 'THE PIZZA HERE IS OUT OF THIS WORLD. TRULY A GEM IN THE HEART OF NAPLES',
+          source: 'NEW YORK POST 2020',
+        },
+      ],
+      currentCommentIndex: 0,
+    };
+  },
+  computed: {
+    currentComment() {
+      return this.comments[this.currentCommentIndex];
+    },
+  },
+  methods: {
+    prevComment() {
+      this.currentCommentIndex = (this.currentCommentIndex - 1 + this.comments.length) % this.comments.length;
+    },
+    nextComment() {
+      this.currentCommentIndex = (this.currentCommentIndex + 1) % this.comments.length;
+    },
+  },
 }
 </script>
 
@@ -10,39 +42,31 @@ export default {
     <div class="row mt-2 background">
       <div class="col-1 p-0 d-flex align-items-center">
         <div class="prev">
-          <button>PREV</button>
+          <button @click="prevComment">PREV</button>
         </div>
       </div>
       <div class="col-10 p-0 d-flex justify-content-center py-5">
         <div class="comments">
           <h1><i class="fa-solid fa-quote-left fa-beat"></i></h1>
-          <h4>"FORGET THE PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"</h4>
-          <span class="magazine">WASHINGTON POST 2018</span> <br>
+          <h4>{{ currentComment.text }}</h4>
+          <span class="magazine">{{ currentComment.source }}</span> <br>
           <div class="circle mt-3">
-            <span class="me-1 ">
-              <i class="fa-solid fa-circle fa-fade"></i>
-            </span>
-            <span class="me-1">
-              <i class="fa-regular fa-circle"></i>
-            </span>
-            <span>
-              <i class="fa-regular fa-circle"></i>
+            <span v-for="(comment, index) in comments" class="me-1">
+              <i :class="`fa-${index === currentCommentIndex ? 'solid fa-fade' : 'regular'} fa-circle`"></i>
             </span>
           </div>
         </div>
       </div>
       <div class="col-1 p-0 d-flex align-items-end justify-content-center flex-column">
-        <div class="next ">
-          <button>NEXT</button>
+        <div class="next">
+          <button @click="nextComment">NEXT</button>
         </div>
       </div>
       <div class="d-flex justify-content-end pe-5">
         <img src="../assets/svg/svg-4.svg" alt="">
       </div>
     </div>
-    <!-- /.row -->
   </div>
-  <!-- /.container-fluid -->
 </template>
 
 

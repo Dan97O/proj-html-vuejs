@@ -24,5 +24,7 @@ export default {
 
 header {
   background-color: black;
+  font-family: "Poppins";
+  font-size: 16px;
 }
 </style>

@@ -17,4 +17,9 @@ export default {
 </template>
 
 
-<style lang="scss"></style>
+<style lang="scss">
+footer {
+  font-family: "Poppins";
+  font-size: 16px;
+}
+</style>

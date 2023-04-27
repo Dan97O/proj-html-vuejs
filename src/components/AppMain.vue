@@ -45,4 +45,9 @@ export default {
 
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+main {
+  font-family: "Poppins";
+  font-size: 16px;
+}
+</style>
