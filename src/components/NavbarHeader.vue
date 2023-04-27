@@ -94,7 +94,7 @@ nav {
       img {
         color: white;
         background-color: white;
-        filter: invert(1);
+        filter: invert(0.9);
       }
     }
   }

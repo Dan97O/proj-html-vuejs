@@ -23,8 +23,10 @@ export default {
 @import "../assets/scss/partials/variables";
 
 header {
-  background-color: black;
+  background-color: $background_dark;
   font-family: "Poppins";
   font-size: 16px;
+  background-image: url('../assets/img/costellazione.jpeg');
+  background-repeat: round;
 }
 </style>

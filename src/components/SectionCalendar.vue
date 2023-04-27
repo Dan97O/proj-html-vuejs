@@ -72,7 +72,9 @@ export default {
 
 
 .col_left {
-  background-color: black;
+  background-color: $background_dark;
+  background-image: url('../assets/img/costellazione.jpeg');
+
   height: 550px;
 }
 
