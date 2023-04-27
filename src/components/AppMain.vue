@@ -1,8 +1,9 @@
 <script>
 import NewPlace from './NewPlace.vue';
-import SectionMagazine from './SectionMagazine.vue'
+import SectionMagazine from './SectionMagazine.vue';
 import SectionPrice from './SectionPrice.vue';
-import SectionBackground from './SectionBackground.vue'
+import SectionBackground from './SectionBackground.vue';
+import SectionTeams from './SectionTeams.vue';
 
 export default {
   name: 'AppMain',
@@ -10,7 +11,8 @@ export default {
     NewPlace,
     SectionMagazine,
     SectionPrice,
-    SectionBackground
+    SectionBackground,
+    SectionTeams,
   }
 
 }
@@ -22,6 +24,7 @@ export default {
     <SectionMagazine />
     <SectionPrice />
     <SectionBackground />
+    <SectionTeams />
   </main>
 </template>
 

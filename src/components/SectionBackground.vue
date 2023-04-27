@@ -28,7 +28,7 @@ export default {
       <div class="col-10 p-0 position-relative">
         <img class="img_mid img-fluid" src="../assets/img/h3-background-img.jpg" alt="">
         <div class="my_container">
-          <h2>GO AHEAD AND BUILD YOUR OWN PIZZA WE WON'T JUDGE</h2>
+          <h2>GO AHEAD AND BUILD YOUR OWN PIZZA WE WON'T JUDGE!</h2>
         </div>
       </div>
       <!-- /.col-10 -->
@@ -59,7 +59,7 @@ export default {
     </div>
     <!-- /.row-bottom -->
   </div>
-  <!-- /container -->
+  <!-- /container-fluid -->
 </template>
 
 
