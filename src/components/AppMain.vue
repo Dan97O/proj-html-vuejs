@@ -8,6 +8,7 @@ import SectionBrand from './SectionBrand.vue';
 import SectionFlavor from './SectionFlavor.vue';
 import SectionPizza from './SectionPizza.vue';
 import SectionCalendar from './SectionCalendar.vue';
+import SectionTable from './SectionTable.vue';
 
 export default {
   name: 'AppMain',
@@ -21,6 +22,7 @@ export default {
     SectionFlavor,
     SectionPizza,
     SectionCalendar,
+    SectionTable,
   }
 
 }
@@ -37,6 +39,7 @@ export default {
     <SectionFlavor />
     <SectionPizza />
     <SectionCalendar />
+    <SectionTable />
   </main>
 </template>
 
