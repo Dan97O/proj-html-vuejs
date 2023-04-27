@@ -55,11 +55,31 @@ export default {
   background-color: $header_text_color;
   color: $header_btn;
   border: none;
-  border-radius: 50% 50% 10% 10%;
-  writing-mode: vertical-rl;
+  border-radius: 50%;
   height: 40px;
   margin-left: -10px;
   margin-right: -10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.prev button:hover,
+.next button:hover {
+  background-color: $header_text_color;
+  transform: scale(1.1);
+}
+
+.prev button:before,
+.next button:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .prev button {
@@ -68,6 +88,14 @@ export default {
 
 .next button {
   transform: rotate(-90deg);
+}
+
+.prev button:before {
+  right: 12px;
+}
+
+.next button:before {
+  left: 12px;
 }
 
 .background {
