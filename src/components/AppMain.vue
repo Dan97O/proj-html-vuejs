@@ -5,6 +5,7 @@ import SectionPrice from './SectionPrice.vue';
 import SectionBackground from './SectionBackground.vue';
 import SectionTeams from './SectionTeams.vue';
 import SectionBrand from './SectionBrand.vue'
+import SectionFlavor from './SectionFlavor.vue'
 
 export default {
   name: 'AppMain',
@@ -15,6 +16,7 @@ export default {
     SectionBackground,
     SectionTeams,
     SectionBrand,
+    SectionFlavor,
   }
 
 }
@@ -28,6 +30,7 @@ export default {
     <SectionBackground />
     <SectionTeams />
     <SectionBrand />
+    <SectionFlavor />
   </main>
 </template>
 
