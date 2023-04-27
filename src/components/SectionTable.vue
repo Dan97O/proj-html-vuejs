@@ -67,8 +67,11 @@ export default {
 
 .container-fluid {
   background-image: url('../assets/img/h3-background-img-3.jpg');
-  height: 200px;
   color: $header_text_color;
+
+  .row {
+    padding: 5rem 0;
+  }
 
   select {
     width: 200px;

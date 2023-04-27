@@ -1,13 +1,20 @@
 <script>
+import SectionFooter from './SectionFooter.vue'
 export default {
+  name: 'AppFooter',
 
+  components: {
+    SectionFooter
+  }
 }
 </script>
-<template>
-  <div>
 
-  </div>
+
+<template>
+  <footer>
+    <SectionFooter />
+  </footer>
 </template>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss"></style>
