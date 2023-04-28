@@ -55,9 +55,9 @@ export default {
     <div class="row">
       <div class="col-6 p-0">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 d-none d-sm-block">
             <h5 class="pt-5 ps-4">FIND OUR RESTAURANTS</h5>
-            <ul class="p-0 ps-4" v-for="restaurant in restaurants">
+            <ul class="p-0 ps-4 d-none d-xl-block" v-for="restaurant in restaurants">
               <li>{{ restaurant.address }}</li>
               <li>{{ restaurant.city }}</li>
               <li>{{ restaurant.phone }}</li>
@@ -70,14 +70,14 @@ export default {
           </div>
           <!-- /col-4 RESTAURANTS -->
           <div class="col-4">
-            <h5 class="pt-5">WORKING HOURS</h5>
+            <h5 class="pt-5 d-none d-sm-block">WORKING HOURS</h5>
             <ul class="p-0" v-for="hours in working">
               <li class="day">{{ hours.day }}</li>
               <li v-bind:class="{ 'time': true, 'my_red': hours.time === 'Kitchen Closed' }">{{ hours.time }}</li>
             </ul>
             <div>
-              <span class="day">FOLLOW US:</span>
-              <span class="icon">
+              <span class="day d-none d-sm-block">FOLLOW US:</span>
+              <span class="icon d-none d-sm-block">
                 <i class="fa-brands fa-twitter fa-bounce ps-2 px-1"></i>
                 <i class="fa-brands fa-facebook fa-fade px-1"></i>
                 <i class="fa-brands fa-instagram fa-beat-fade px-1"></i>
@@ -86,7 +86,7 @@ export default {
             </div>
           </div>
           <!-- /col-4 WORKING HOURS -->
-          <div class="col-4 d-flex flex-column justify-content-between align-items-center">
+          <div class="col-4 d-flex flex-column justify-content-between align-items-center d-none d-sm-block">
             <h4 class="pt-5 pe-2 ps-2">THE DON PEPPE CREW FIRST AND FOREMOST VALUES AN AUTHENTIC, WELL BAKED SLICE OF
               PIZZA
             </h4>
@@ -124,8 +124,8 @@ ul {
 .col-4 {
   background-color: $background_dark;
   color: $text_footer;
-  //padding: 4rem 2rem 4rem 4rem;
   min-height: 584px;
+  max-height: 584px;
 
   h5,
   .heart,
@@ -156,7 +156,8 @@ ul {
 }
 
 .img_footer {
-  height: 584px;
+  min-height: 584px;
+  max-height: 584px;
   width: 100%;
   object-fit: cover;
 }

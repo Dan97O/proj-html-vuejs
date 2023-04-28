@@ -6,7 +6,7 @@ export default {
 
 
 <template>
-  <div id="calendar" class="container-fluid p-0 mt-2">
+  <div id="calendar" class="container-fluid mt-2">
     <div class="row">
       <div class="col-6 col_left p-0 d-flex justify-content-start align-items-center flex-column">
         <div class="calendar pt-5">
@@ -23,7 +23,7 @@ export default {
             </div>
           </div>
           <hr>
-          <div class="d-flex mt-4">
+          <div class="d-flex mt-4 d-none d-lg-flex">
             <div>
               <h4 class="date_num m-0">03</h4>
               <span class="date">NOV</span>
@@ -34,7 +34,7 @@ export default {
             </div>
           </div>
           <hr>
-          <div class="d-flex mt-4">
+          <div class="d-flex mt-4 d-none d-xl-flex">
             <div>
               <h4 class="date_num m-0">05</h4>
               <span class="date">NOV</span>

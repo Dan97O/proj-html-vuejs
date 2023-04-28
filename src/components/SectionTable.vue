@@ -9,7 +9,7 @@ export default {
   <div id="sectionTable" class="container-fluid p-0 mt-2">
     <div class="row h-100">
       <div class="col-12 p-0 d-flex justify-content-center align-items-center">
-        <div class=" position-relative">
+        <div class=" position-relative d-none d-md-block">
           <select class="form-select form-select-sm me-3" aria-label=".form-select-sm example">
             <option selected>Select people</option>
             <option value="1">1</option>
@@ -26,8 +26,8 @@ export default {
           <!-- /select people -->
           <span class="powered">*Powered by OpenTable</span>
         </div>
-        <span>FOR</span>
-        <select class="form-select form-select-sm mx-3" aria-label=".form-select-sm example">
+        <span class="d-none d-md-block">FOR</span>
+        <select class="form-select form-select-sm mx-3 d-none d-md-block" aria-label=".form-select-sm example">
           <option value="">Select date</option>
           <option value="28-04-2023">28 April 2023</option>
           <option value="29-04-2023">29 April 2023</option>
@@ -40,8 +40,8 @@ export default {
           <option value="06-05-2023">6 May 2023</option>
         </select>
         <!-- /select date -->
-        <span>AT</span>
-        <select class="form-select form-select-sm mx-3" aria-label=".form-select-sm example">
+        <span class="d-none d-md-block">AT</span>
+        <select class="form-select form-select-sm mx-3 d-none d-md-block" aria-label=".form-select-sm example">
           <option value="">Select time</option>
           <option value="17:00">5:00 PM</option>
           <option value="18:00">6:00 PM</option>

@@ -11,7 +11,7 @@ export default {
     <div class="row mt-2">
       <div class="col-6 p-0 position-relative">
         <img class="img-fluid" src="../assets/img/h1-img-4.jpg" alt="">
-        <div class="special">
+        <div class="special d-none d-lg-block">
           <img class="img-fluid" src="../assets/img/h1-img-7n.png" alt="">
         </div>
       </div>
@@ -20,7 +20,7 @@ export default {
         <div class="price">
           <h3>SPECIALS*</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, perspiciatis!</p>
-          <div class="d-flex">
+          <div class="d-none d-sm-flex">
             <div>
               <h4 class="dollars">$10</h4>
             </div>
@@ -29,7 +29,7 @@ export default {
               <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, explicabo.</span>
             </div>
           </div>
-          <div class="d-flex mt-3">
+          <div class="mt-3 d-none d-md-flex">
             <div>
               <h4 class="dollars">$20</h4>
             </div>
@@ -38,7 +38,7 @@ export default {
               <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, explicabo.</span>
             </div>
           </div>
-          <div class="d-flex mt-3">
+          <div class="mt-3 d-none d-xl-flex">
             <div>
               <h4 class="dollars">$30</h4>
             </div>

@@ -7,7 +7,7 @@ export default {
 
 
 <template>
-  <div class="container-fluid p-0">
+  <div class="container-fluid">
     <div class="row mt-2">
       <div class="col-1 p-0">
         <img class="img_top_left img-fluid" src="../assets/img/h3-background-img.jpg" alt="">
@@ -27,7 +27,7 @@ export default {
       <!-- /.col-1 -->
       <div class="col-10 p-0 position-relative">
         <img class="img_mid img-fluid" src="../assets/img/h3-background-img.jpg" alt="">
-        <div class="my_container">
+        <div class="my_container d-none d-xxl-block">
           <h2>GO AHEAD AND BUILD YOUR OWN PIZZA WE WON'T JUDGE!</h2>
         </div>
       </div>
