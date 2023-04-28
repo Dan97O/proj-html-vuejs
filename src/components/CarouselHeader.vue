@@ -1,32 +1,13 @@
 <script>
-import img2 from '../assets/img/h3-rev-img-2.png'
-import img4 from '../assets/img/h3-rev-img-4.png'
-import img6 from '../assets/img/h3-rev-img-6.png'
-import bkg1 from '../assets/img/h3-rev-img-1.png'
-import bkg3 from '../assets/img/h3-rev-img-3.png'
-import bkg5 from '../assets/img/h3-rev-img-5.png'
 export default {
   name: 'CarouselHeader',
-  components: {
-    img2,
-    img4,
-    img6,
-    bkg1,
-    bkg3,
-    bkg5
+
+  props: {
+    images: Array,
+    background: Array
   },
   data() {
     return {
-      images: [
-        img2,
-        img4,
-        img6,
-      ],
-      background: [
-        bkg1,
-        bkg3,
-        bkg5,
-      ],
       currentImage: 0,
     };
   },
