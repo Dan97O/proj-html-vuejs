@@ -1,6 +1,4 @@
 <script>
-
-
 import CarouselHeader from './CarouselHeader.vue';
 import NavbarHeader from './NavbarHeader.vue';
 export default {

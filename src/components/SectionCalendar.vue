@@ -112,7 +112,7 @@ export default {
   position: absolute;
   top: -40px;
   right: 15px;
-  background-color: $header_text_color;
+  background-color: $header_btn;
   padding: 5px;
 
   img {
