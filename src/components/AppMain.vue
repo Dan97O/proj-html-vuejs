@@ -9,7 +9,6 @@ import SectionFlavor from './SectionFlavor.vue';
 import SectionPizza from './SectionPizza.vue';
 import SectionCalendar from './SectionCalendar.vue';
 import SectionTable from './SectionTable.vue';
-
 export default {
   name: 'AppMain',
   components: {
@@ -24,7 +23,6 @@ export default {
     SectionCalendar,
     SectionTable,
   }
-
 }
 </script>
 
@@ -42,8 +40,6 @@ export default {
     <SectionTable />
   </main>
 </template>
-
-
 
 <style lang="scss" scoped>
 main {

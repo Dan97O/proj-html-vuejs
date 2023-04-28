@@ -3,6 +3,7 @@ export default {
 
 }
 </script>
+
 <template>
   <div class="container-fluid p-0">
     <div class="row mt-2">
@@ -39,7 +40,6 @@ export default {
   </div>
   <!-- /.container-fluid -->
 </template>
-
 
 <style lang="scss" scoped>
 @import "../assets/scss/partials/variables";

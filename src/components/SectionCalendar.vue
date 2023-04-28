@@ -4,7 +4,6 @@ export default {
 }
 </script>
 
-
 <template>
   <div id="calendar" class="container-fluid mt-2">
     <div class="row">
@@ -22,6 +21,7 @@ export default {
               <span class="location"><i class="fa-solid fa-location-dot fa-fade"></i> 204 E. Pizzetta Tommaso </span>
             </div>
           </div>
+          <!-- first date -->
           <hr>
           <div class="d-flex mt-4 d-none d-lg-flex">
             <div>
@@ -33,6 +33,7 @@ export default {
               <span class="location"><i class="fa-solid fa-location-dot fa-fade"></i> 204 E. Pizzetta Tommaso </span>
             </div>
           </div>
+          <!-- second date -->
           <hr>
           <div class="d-flex mt-4 d-none d-xl-flex">
             <div>
@@ -44,8 +45,9 @@ export default {
               <span class="location"><i class="fa-solid fa-location-dot fa-fade"></i> 204 E. Pizzetta Tommaso </span>
             </div>
           </div>
+          <!-- third  date -->
         </div>
-
+        <!-- /calendar -->
       </div>
       <!-- /.col-6 -->
       <div class="col-6 p-0 position-relative">
@@ -53,12 +55,15 @@ export default {
         <div class="carriage_top">
           <img src="../assets/svg/svg-10.svg" alt="">
         </div>
+        <!-- carriage_top -->
         <div class="carriage">
           <img src="../assets/svg/svg-9.svg" alt="">
         </div>
+        <!-- carriage -->
         <div class="container_pizza d-flex justify-content-end pe-5 w-100">
           <img class="pizza" src="../assets/svg/svg-4.svg" alt="">
         </div>
+        <!-- /container_pizza -->
       </div>
       <!-- /.col-6 -->
     </div>
@@ -111,7 +116,7 @@ export default {
 .carriage_top {
   position: absolute;
   top: -40px;
-  right: 15px;
+  right: 0px;
   background-color: $header_btn;
   padding: 5px;
 
@@ -125,7 +130,7 @@ export default {
 .carriage {
   position: absolute;
   top: 0;
-  right: 15px;
+  right: 0px;
   background-color: $header_text_color;
   padding: 5px;
 

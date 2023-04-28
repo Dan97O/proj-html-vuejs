@@ -1,7 +1,6 @@
 <script>
 export default {
   name: 'CarouselHeader',
-
   props: {
     images: Array,
     background: Array
@@ -15,7 +14,7 @@ export default {
     prevImage() {
       if (this.currentImage === 0) {
         this.currentImage = this.images.length - 1;
-        console.log('premuto prev');
+        //console.log('premuto prev');
       } else {
         this.currentImage--;
       }
@@ -23,7 +22,7 @@ export default {
     nextImage() {
       if (this.currentImage === this.images.length - 1) {
         this.currentImage = 0;
-        console.log('premuto next');
+        //console.log('premuto next');
       } else {
         this.currentImage++;
       }
@@ -75,6 +74,7 @@ export default {
 .advance {
   width: 100%;
 
+  /* #region button */
   .prev button,
   .next button {
     padding: 10px;
@@ -124,6 +124,9 @@ export default {
     left: 12px;
   }
 
+  /* #endregion button */
+
+  /* #region carousel */
   .carousel {
     text-align: center;
     background-repeat: no-repeat;
@@ -142,5 +145,8 @@ export default {
       display: block;
     }
   }
+
+  /* #endregion carousel */
+
 }
 </style>

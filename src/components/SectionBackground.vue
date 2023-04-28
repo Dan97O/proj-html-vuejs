@@ -5,7 +5,6 @@ export default {
 }
 </script>
 
-
 <template>
   <div class="container-fluid">
     <div class="row mt-2">
@@ -37,8 +36,6 @@ export default {
         <div class="container_pizza d-flex justify-content-end pe-5 w-100">
           <img class="pizza" src="../assets/svg/svg-4.svg" alt="">
         </div>
-
-
       </div>
       <!-- /.col-1 -->
     </div>

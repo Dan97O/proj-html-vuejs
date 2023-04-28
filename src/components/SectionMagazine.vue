@@ -45,6 +45,7 @@ export default {
           <button @click="prevComment">PREV</button>
         </div>
       </div>
+      <!-- /col-1 -->
       <div class="col-10 p-0 d-flex justify-content-center py-5">
         <div class="comments">
           <h1><i class="fa-solid fa-quote-left fa-beat"></i></h1>
@@ -55,18 +56,24 @@ export default {
               <i :class="`fa-${index === currentCommentIndex ? 'solid fa-fade' : 'regular'} fa-circle`"></i>
             </span>
           </div>
+          <!-- /.dot -->
         </div>
+        <!-- /comments -->
       </div>
+      <!-- /col-10 -->
       <div class="col-1 p-0 d-flex align-items-end justify-content-center flex-column">
         <div class="next">
           <button @click="nextComment">NEXT</button>
         </div>
       </div>
+      <!-- /col-1 -->
       <div class="d-flex justify-content-end pe-5">
         <img src="../assets/svg/svg-4.svg" alt="">
       </div>
     </div>
+    <!-- /row -->
   </div>
+  <!-- /container-fluid -->
 </template>
 
 

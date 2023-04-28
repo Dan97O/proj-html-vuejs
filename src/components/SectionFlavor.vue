@@ -6,7 +6,7 @@ export default {
 
 
 <template>
-  <div class="container-fluid p-0">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-12 d-flex justify-content-center align-items-center py-5 p-0">
         <div class="pizza_town ">
@@ -23,6 +23,7 @@ export default {
             </p>
           </div>
         </div>
+        <!-- /pizza_town -->
       </div>
       <!-- /.col-12 -->
       <div class="container_pizza d-flex justify-content-end pe-5 w-100">

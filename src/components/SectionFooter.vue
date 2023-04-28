@@ -22,10 +22,12 @@ export default {
               <li>{{ restaurant.city }}</li>
               <li>{{ restaurant.phone }}</li>
             </ul>
+            <!-- /FIND OUR RESTAURANTS -->
             <div class="ps-4 pt-5">
               <span class="heart">
                 Created with &hearts; by <span class="qode">Qode Interactive</span>
               </span>
+              <!-- /created by -->
             </div>
           </div>
           <!-- /col-4 RESTAURANTS -->
@@ -43,6 +45,7 @@ export default {
                 <i class="fa-brands fa-instagram fa-beat-fade px-1"></i>
                 <i class="fa-brands fa-linkedin fa-shake px-1"></i>
               </span>
+              <!-- /icon -->
             </div>
           </div>
           <!-- /col-4 WORKING HOURS -->
@@ -52,7 +55,9 @@ export default {
             </h4>
             <img class="premium mb-5" src="../assets/img/natural-product-icon.png" alt="">
           </div>
+          <!-- /col-4 -->
         </div>
+        <!-- /row -->
       </div>
       <!-- /.col-6 -->
       <div class="col-6 p-0 position-relative">
@@ -60,6 +65,7 @@ export default {
         <div class="container_pizza d-flex justify-content-end pe-5 w-100">
           <img class="pizza" src="../assets/svg/svg-4.svg" alt="">
         </div>
+        <!-- /container_pizza -->
       </div>
       <!-- /.col-6 -->
     </div>
@@ -72,7 +78,6 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/partials/variables";
 
-
 .my_red {
   color: $text_red;
 }
@@ -81,6 +86,7 @@ ul {
   list-style: none;
 }
 
+/* #region col-4 */
 .col-4 {
   background-color: $background_dark;
   color: $text_footer;
@@ -115,6 +121,7 @@ ul {
 
 }
 
+/* #endregion col-4 */
 .img_footer {
   min-height: 584px;
   max-height: 584px;

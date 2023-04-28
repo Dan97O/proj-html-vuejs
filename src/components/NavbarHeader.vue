@@ -5,7 +5,6 @@ export default {
     pages: Array,
     links: Array
   },
-
   methods: {
     scrollToSectionTable() {
       const sectionTable = document.getElementById("sectionTable");
@@ -79,7 +78,6 @@ nav {
     a {
       text-decoration: none;
       color: $header_text_color;
-
 
       img {
         color: white;

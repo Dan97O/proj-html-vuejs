@@ -18,7 +18,9 @@ export default {
             <i class="fa-brands fa-facebook fa-fade px-1"></i>
             <i class="fa-brands fa-instagram fa-beat-fade px-1"></i>
           </span>
+          <!-- /icon -->
         </div>
+        <!-- /team -->
       </div>
       <!-- /.col-3 -->
       <div class="col-3 p-0">
@@ -31,7 +33,9 @@ export default {
             <i class="fa-brands fa-facebook fa-fade px-1"></i>
             <i class="fa-brands fa-instagram fa-beat-fade px-1"></i>
           </span>
+          <!-- /icon -->
         </div>
+        <!-- /team -->
       </div>
       <!-- /.col-3 -->
       <div class="col-3 p-0">
@@ -44,7 +48,9 @@ export default {
             <i class="fa-brands fa-facebook fa-fade px-1"></i>
             <i class="fa-brands fa-instagram fa-beat-fade px-1"></i>
           </span>
+          <!-- /icon -->
         </div>
+        <!-- /team -->
       </div>
       <!-- /.col-3 -->
       <div class="col-3 p-0 position-relative">
@@ -57,7 +63,9 @@ export default {
             <i class="fa-brands fa-facebook fa-fade px-1"></i>
             <i class="fa-brands fa-instagram fa-beat-fade px-1"></i>
           </span>
+          <!-- /icon -->
         </div>
+        <!-- /team -->
         <div class="container_pizza d-flex justify-content-end pe-5 w-100">
           <img class="pizza" src="../assets/svg/svg-4.svg" alt="">
         </div>
@@ -72,7 +80,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/partials/variables";
-
 
 .col-3 {
   position: relative;

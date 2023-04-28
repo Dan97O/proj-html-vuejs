@@ -48,6 +48,7 @@ export default {
             </div>
           </div>
         </div>
+        <!-- /price -->
         <div class="d-flex justify-content-end pe-5 w-100">
           <img class="pizza" src="../assets/svg/svg-4.svg" alt="">
         </div>
