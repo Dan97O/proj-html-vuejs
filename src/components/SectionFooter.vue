@@ -86,7 +86,7 @@ export default {
             </div>
           </div>
           <!-- /col-4 WORKING HOURS -->
-          <div class="col-4 d-flex flex-column justify-content-between align-items-center d-none d-sm-block">
+          <div class="col-4 d-flex flex-column justify-content-between align-items-center d-none d-sm-flex">
             <h4 class="pt-5 pe-2 ps-2">THE DON PEPPE CREW FIRST AND FOREMOST VALUES AN AUTHENTIC, WELL BAKED SLICE OF
               PIZZA
             </h4>
