@@ -61,6 +61,7 @@ export default {
 img {
   margin: 0 7rem;
   height: 150px;
+  cursor: pointer;
 }
 
 .name_pizza {

@@ -78,6 +78,12 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/partials/variables";
 
+li:hover {
+  color: $header_text_color ;
+  cursor: pointer;
+}
+
+
 .my_red {
   color: $text_red;
 }

@@ -76,6 +76,14 @@ export default {
   select {
     width: 200px;
     height: 50px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $header_btn;
+      border: none;
+      color: $header_text_color;
+      font-size: 16px;
+    }
   }
 
   button {
@@ -84,6 +92,10 @@ export default {
     height: 50px;
     width: 200px;
     font-size: 12px;
+
+    &:hover {
+      font-size: 16px;
+    }
   }
 
   .powered {

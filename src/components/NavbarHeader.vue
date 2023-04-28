@@ -64,12 +64,22 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/partials/variables";
 
+a:hover {
+  color: $text_footer ;
+}
+
+
 nav {
   flex-wrap: wrap;
 
   button {
     background-color: $header_btn;
     color: $header_text_color;
+
+    &:hover {
+      background-color: $header_btn;
+      color: $text_footer;
+    }
   }
 
   ul {
@@ -89,6 +99,7 @@ nav {
 
   .logo {
     height: 130px;
+    cursor: pointer;
   }
 }
 </style>

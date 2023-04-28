@@ -75,6 +75,10 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/partials/variables";
 
+h5:hover {
+  color: $text_footer ;
+  cursor: pointer;
+}
 
 .col_left {
   background-color: $background_dark;
