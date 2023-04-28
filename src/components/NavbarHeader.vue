@@ -43,6 +43,8 @@ export default {
   },
 }
 </script>
+
+
 <template>
   <div class="container-fluid">
     <div class="row">
@@ -59,9 +61,9 @@ export default {
           </ul>
           <img class="logo mx-3" src="../assets/img/h5-logo-divided-header.png" alt="">
           <ul class="d-flex gap-3 m-0 me-5 p-0">
-            <li><a :href="links[0].url">{{ links[0].title }}</a></li>
-            <li><a :href="links[1].url">{{ links[1].title }}</a></li>
-            <li><a :href="links[2].url">{{ links[2].title }}</a></li>
+            <li v-for="link in links">
+              <a :href="link.url">{{ link.title }}</a>
+            </li>
           </ul>
           <ul class="d-flex gap-3 m-0">
             <li>
