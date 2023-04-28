@@ -1,40 +1,11 @@
 <script>
 export default {
   name: 'NavbarHeader',
-
-  data() {
-    return {
-      pages: [
-        {
-          title: 'HOME',
-          url: '#sectionHome'
-        },
-        {
-          title: 'PAGES',
-          url: '#'
-        },
-        {
-          title: 'MENU',
-          url: '#',
-        }
-      ],
-
-      links: [
-        {
-          title: 'EVENT',
-          url: '#calendar'
-        },
-        {
-          title: 'BLOG',
-          url: '#blog'
-        },
-        {
-          title: 'LANDING',
-          url: '#landing'
-        }
-      ]
-    };
+  props: {
+    pages: Array,
+    links: Array
   },
+
   methods: {
     scrollToSectionTable() {
       const sectionTable = document.getElementById("sectionTable");

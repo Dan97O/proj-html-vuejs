@@ -7,11 +7,44 @@ export default {
     NavbarHeader,
     CarouselHeader,
   },
+  data() {
+    return {
+      pages: [
+        {
+          title: 'HOME',
+          url: '#sectionHome'
+        },
+        {
+          title: 'PAGES',
+          url: '#'
+        },
+        {
+          title: 'MENU',
+          url: '#',
+        }
+      ],
+
+      links: [
+        {
+          title: 'EVENT',
+          url: '#calendar'
+        },
+        {
+          title: 'BLOG',
+          url: '#blog'
+        },
+        {
+          title: 'LANDING',
+          url: '#landing'
+        }
+      ]
+    };
+  },
 }
 </script>
 <template>
   <header>
-    <NavbarHeader />
+    <NavbarHeader :pages="pages" :links="links" />
     <CarouselHeader />
   </header>
 </template>
