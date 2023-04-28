@@ -6,7 +6,7 @@ export default {
 
 
 <template>
-  <div class="container-fluid mt-2">
+  <div id="blog" class="container-fluid mt-2">
     <div class="row">
       <div class="col-3 p-0">
         <img class="img-fluid" src="../assets/img/h1-team-1a-700x700.jpg" alt="">

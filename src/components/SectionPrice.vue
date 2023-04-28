@@ -31,7 +31,7 @@ export default {
           </div>
           <div class="d-flex mt-3">
             <div>
-              <h4 class="dollars">$10</h4>
+              <h4 class="dollars">$20</h4>
             </div>
             <div class="ms-3">
               <h4>COMBO MEZZO</h4>
@@ -40,7 +40,7 @@ export default {
           </div>
           <div class="d-flex mt-3">
             <div>
-              <h4 class="dollars">$10</h4>
+              <h4 class="dollars">$30</h4>
             </div>
             <div class="ms-3">
               <h4>COMBO GRANDE</h4>

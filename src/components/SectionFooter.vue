@@ -51,7 +51,7 @@ export default {
 
 
 <template>
-  <div class="container-fluid mt-2">
+  <div id="landing" class="container-fluid mt-2">
     <div class="row">
       <div class="col-6 p-0">
         <div class="row">

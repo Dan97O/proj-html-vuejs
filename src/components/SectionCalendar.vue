@@ -6,7 +6,7 @@ export default {
 
 
 <template>
-  <div class="container-fluid p-0 mt-2">
+  <div id="calendar" class="container-fluid p-0 mt-2">
     <div class="row">
       <div class="col-6 col_left p-0 d-flex justify-content-start align-items-center flex-column">
         <div class="calendar pt-5">

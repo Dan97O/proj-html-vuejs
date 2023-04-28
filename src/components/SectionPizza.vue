@@ -6,7 +6,7 @@ export default {
 
 
 <template>
-  <div class="container-fluid ">
+  <div id="sectionMenu" class="container-fluid ">
     <div class="row">
       <div class="col-12 p-0 d-flex justify-content-center align-items-center py-5">
         <div class="pizze text-center">

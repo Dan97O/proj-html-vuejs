@@ -7,7 +7,7 @@ export default {
       pages: [
         {
           title: 'HOME',
-          url: '#'
+          url: '#sectionHome'
         },
         {
           title: 'PAGES',
@@ -15,22 +15,22 @@ export default {
         },
         {
           title: 'MENU',
-          url: '#'
+          url: '#',
         }
       ],
 
       links: [
         {
           title: 'EVENT',
-          url: '#'
+          url: '#calendar'
         },
         {
           title: 'BLOG',
-          url: '#'
+          url: '#blog'
         },
         {
           title: 'LANDING',
-          url: '#'
+          url: '#landing'
         }
       ]
     };
@@ -39,6 +39,10 @@ export default {
     scrollToSectionTable() {
       const sectionTable = document.getElementById("sectionTable");
       sectionTable.scrollIntoView({ behavior: "smooth" });
+    },
+    scrollToMenu() {
+      const sectionMenu = document.getElementById("sectionMenu");
+      sectionMenu.scrollIntoView({ behavior: "smooth" });
     },
   },
 }
@@ -57,14 +61,16 @@ export default {
                   src="../assets/svg/svg-0.svg" :alt="pages[0].title"> {{ pages[0].title }}</a>
             </li>
             <li><a :href="pages[1].url"> {{ pages[1].title }}</a></li>
-            <li><a :href="pages[2].url"> {{ pages[2].title }}</a></li>
+            <li><button @click="scrollToMenu()" class="p-0 border-0 bg-transparent">{{ pages[2].title }}</button></li>
           </ul>
+          <!-- /ul pages -->
           <img class="logo mx-3" src="../assets/img/h5-logo-divided-header.png" alt="">
           <ul class="d-flex gap-3 m-0 me-5 p-0">
             <li v-for="link in links">
               <a :href="link.url">{{ link.title }}</a>
             </li>
           </ul>
+          <!-- /ul links -->
           <ul class="d-flex gap-3 m-0">
             <li>
               <a class="d-flex" href="#"><img class="img-fluid me-2" src="../assets/svg/svg-1.svg" alt=""> CART</a>
@@ -73,10 +79,15 @@ export default {
               <a class="d-flex" href="#"><i class="fa-solid fa-magnifying-glass fa-rotate-90 me-2"></i> SEARCH</a>
             </li>
           </ul>
+          <!-- /ul cart and search -->
         </nav>
+        <!-- /nav -->
       </div>
+      <!-- /col-12 -->
     </div>
+    <!-- /row -->
   </div>
+  <!-- /container-fluid -->
 </template>
 
 

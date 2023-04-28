@@ -38,7 +38,7 @@ export default {
 
 
 <template>
-  <div class="container-fluid">
+  <div id="sectionHome" class="container-fluid">
     <div class="row mt-2 background">
       <div class="col-1 p-0 d-flex align-items-center">
         <div class="prev">
