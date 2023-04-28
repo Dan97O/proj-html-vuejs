@@ -6,7 +6,7 @@ export default {
 
 
 <template>
-  <div class="container-fluid p-0 mt-2">
+  <div id="sectionTable" class="container-fluid p-0 mt-2">
     <div class="row h-100">
       <div class="col-12 p-0 d-flex justify-content-center align-items-center">
         <div class=" position-relative">

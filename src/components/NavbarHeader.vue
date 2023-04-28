@@ -34,7 +34,13 @@ export default {
         }
       ]
     };
-  }
+  },
+  methods: {
+    scrollToSectionTable() {
+      const sectionTable = document.getElementById("sectionTable");
+      sectionTable.scrollIntoView({ behavior: "smooth" });
+    },
+  },
 }
 </script>
 <template>
@@ -42,7 +48,7 @@ export default {
     <div class="row">
       <div class="col-12">
         <nav class="d-flex justify-content-center align-items-center py-4">
-          <button class="btn rounded-0 me-5">ORDER ONLINE</button>
+          <button @click="scrollToSectionTable()" class="btn rounded-0 me-5">ORDER ONLINE</button>
           <ul class="d-flex gap-3 m-0">
             <li>
               <a class="d-flex align-items-center" :href="pages[0].url"><img style="height: 13px;" class="img-fluid me-2"
